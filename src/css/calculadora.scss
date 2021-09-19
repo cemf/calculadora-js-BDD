@@ -1,0 +1,41 @@
+$color-1:#fff;
+
+.main{
+    margin:30px 0 0 30px;
+    width: 260px;
+    background-color:darkkhaki;
+    .big-text{
+        font-size: 1.5em;
+        text-align: right;
+        background-color:darkkhaki;
+        border:none;
+    }
+    .botao{
+        border-radius: 13px;
+        // border-right: 1px solid gray;
+        // border-bottom: 3px solid;
+        &:last-of-type{
+            border-right: none;
+        }
+        &.limpar{
+            background-color: red;
+            color: $color-1;
+        }
+        &.operacao{
+            background-color: yellowgreen;
+        }
+        &.numero{
+            background-color: black;
+            color: white;
+            border-top: 1px solid wheat;
+        }
+        p{
+            text-align: center;
+            vertical-align: middle;
+            margin-bottom: 9px;
+            margin-top: 10px;
+        }
+        
+
+    }
+}

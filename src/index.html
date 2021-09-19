@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Calculadora</title>
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/calculadora.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <div class="row">
+          <div class="big-text">
+            <input
+              type="text"
+              class="form-control big-text kz-input-text"
+              value="0"
+              id="resultado"
+              readonly
+            />
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <button class="botao limpar col-3" onclick="limpar()">
+            <p>C</p>
+          </button>
+          <button class="botao operacao col-3" onclick="definirOperacao('/')">
+            <p>/</p>
+          </button>
+          <button class="botao operacao col-3" onclick="definirOperacao('*')">
+            <p>*</p>
+          </button>
+          <button class="botao operacao col-3" onclick="todo()">
+            <p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#000"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="20" y1="12" x2="4" y2="12" />
+                <polyline points="10 18 4 12 10 6" />
+              </svg>
+            </p>
+          </button>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <button class="botao numero col-3" onclick="adicionarNumero(7)">
+            <p>7</p>
+          </button>
+          <button class="botao numero col-3" onclick="adicionarNumero(8)">
+            <p>8</p>
+          </button>
+          <button class="botao numero col-3" onclick="adicionarNumero(9)">
+            <p>9</p>
+          </button>
+          <button class="botao operacao col-3" onclick="definirOperacao('-')">
+            <p>-</p>
+          </button>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <button class="botao numero col-3" onclick="adicionarNumero(4)">
+            <p>4</p>
+          </button>
+          <button class="botao numero col-3" onclick="adicionarNumero(5)">
+            <p>5</p>
+          </button>
+          <button class="botao numero col-3" onclick="adicionarNumero(6)">
+            <p>6</p>
+          </button>
+          <button class="botao operacao col-3" onclick="definirOperacao('+')">
+            <p>+</p>
+          </button>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <button class="botao numero col-3" onclick="adicionarNumero(1)">
+            <p>1</p>
+          </button>
+          <button class="botao numero col-3" onclick="adicionarNumero(2)">
+            <p>2</p>
+          </button>
+          <button class="botao numero col-3" onclick="adicionarNumero(3)">
+            <p>3</p>
+          </button>
+          <button class="botao operacao col-3">
+            <p>( )</p>
+          </button>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <button class="botao operacao col-3" onclick="adicionarNumero('.')">
+            <p>.</p>
+          </button>
+          <button class="botao numero col-3" onclick="adicionarNumero(0)">
+            <p>0</p>
+          </button>
+
+          <button class="botao operacao col-3" onclick="invertersinal()">
+            <p>+/-</p>
+          </button>
+          <button class="botao operacao col-3" onclick="calcular()">
+            <p>=</p>
+          </button>
+        </div>
+      </div>
+    </div>    
+    <script src="js/calculadora.js"></script>
+    <script src="js/util.js"></script>
+  </body>
+</html>
