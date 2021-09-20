@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "bootstrap": "^5.1.0"
-  },
+  }, 
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cemf/calculadora-js-BDD.git"
